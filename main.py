@@ -40,14 +40,14 @@ if verificar_horario():
     driver.maximize_window()
 
     # Configurações do e-mail e autenticação
-    sender_email = 'verifica.gestao.bkp@gmail.com'
-    receiver_email = 'joao.silveira@viaveneto.com.br'
+    sender_email = 'EMAIL ENVIAR'
+    receiver_email = 'EMAIL RECEVER'
     subject = 'NFC-e em Contigência'
-    smtp_username = 'verifica.gestao.bkp@gmail.com'
-    smtp_password = 'toxicrhbruarrasn'
+    smtp_username = 'EMAIL ENVIAR'
+    smtp_password = 'SENHA SMTP'
 
     # Abra a página de login
-    driver.get('https://viaveneto.dynamicca.com.br/telas/Login.aspx?xBooAutenticacaoCookie=false')
+    driver.get('URL')
 
     # Aguarde 5 segundos para o site abrir
     time.sleep(2)
@@ -55,8 +55,8 @@ if verificar_horario():
     # Encontre os campos de nome de usuário e senha e insira suas credenciais
     username = driver.find_element(By.ID, 'txtUsuario')
     password = driver.find_element(By.ID, 'pwbSenha')
-    username.send_keys('ti.loja')
-    password.send_keys('cnxloja01')
+    username.send_keys('USER)
+    password.send_keys('SENHA')
 
     # Pressione Enter para fazer login
     password.send_keys(Keys.RETURN)
