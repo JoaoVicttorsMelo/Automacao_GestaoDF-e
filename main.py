@@ -55,7 +55,7 @@ if verificar_horario():
     # Encontre os campos de nome de usuário e senha e insira suas credenciais
     username = driver.find_element(By.ID, 'txtUsuario')
     password = driver.find_element(By.ID, 'pwbSenha')
-    username.send_keys('USER)
+    username.send_keys('USER')
     password.send_keys('SENHA')
 
     # Pressione Enter para fazer login
